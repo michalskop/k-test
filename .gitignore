@@ -1,0 +1,14 @@
+dev/
+smarty/templates_c/
+smarty/cache/
+jmk/
+result.txt
+email.txt
+click.txt
+result.csv
+result0.csv
+*~lock*
+www/setup.php
+www/research.txt
+
+
