@@ -1,0 +1,9 @@
+http://www.facebook.com/dialog/feed?
+    app_id={$text.result_fb_appid}&
+    link={$text.result_fb_redirect_link|escape:'url'}&
+    picture=&
+    name={$text.result_fb_name|escape:'url'}&
+    caption=&
+    actions={$text.result_fb_action|escape:'url'}&
+    description={$fb_result}&
+    redirect_uri={$text.result_fb_redirect_link|escape:'url'}

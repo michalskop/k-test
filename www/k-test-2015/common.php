@@ -19,25 +19,43 @@ function sanitize($input) {
 * extracts user's answers
 */
 function get_user_values() {
-  $user = array('voteq'=>array(),'voter'=>array(),'votes'=>array());
+  $user = [];
   if (count($_GET) > 0) {
     foreach ($_GET as $key => $param) {
       //votes;
-      if (substr($key,0,2) == 'q-') 
-        $user['voteq'][substr($key,2)] = (int) $param;
-      if (substr($key,0,2) == 'r-') 
-        $user['voter'][substr($key,2)] = (int) $param;
-      if (substr($key,0,2) == 's-') 
-        $user['votes'][substr($key,2)] = (int) $param;
+      if ((substr($key,0,2) == 'q-') or (substr($key,0,2) == 'r-') or (substr($key,0,2) == 's-'))
+        $user[$key] = (int) $param;
     }
   } else
       return $user;
   return $user;
 }
 
+
 /**
 * calculate overall score
 */
+function calc_score($user) {
+    $pro = [1, 3, 5, 6, 10, 12, 13, 15];
+    $contra = [4, 7, 9, 11, 16, 18, 19];
+    $score = 0;
+    $possible = 0;
+    for ($i=1; $i<=20; $i++) {
+        if (!isset($user['q-'.$i]))
+            $u = 5;
+        else {
+            $u = $user['q-'.$i];
+            $possible = $possible + 10;
+        }
+        if (in_array($i,$pro))
+            $score += $u;
+        if (in_array($i,$contra))
+            $score += 10-$u; 
+    }
+    if ($possible == 0)
+        return 0.5;
+    return $score/$possible;
+}
 
 
 

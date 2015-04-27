@@ -2,6 +2,7 @@
         <!-- note: data-interval="false" disables the automatic transition -->
         <!-- note: data-wrap="false" disables the rotation -->
         <form action="./match/" method="get" id="calc">
+          <input type="hidden" name="order" value="{$order}" />
           <div class="carousel-inner">   
           {$key=1} 
           {foreach $questions as $question}

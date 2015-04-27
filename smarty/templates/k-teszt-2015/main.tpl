@@ -11,9 +11,9 @@
     <link type="image/x-icon" href="../../image/favicon.ico" rel="shortcut icon">
     
     <meta property="og:image" content="{$text['og:image']}"/>
-	<meta property="og:title" content="{$text['calc']}"/>
+	<meta property="og:title" content="{$text['test']}"/>
 	<meta property="og:url" content="{$text['url']}"/>
-	<meta property="og:site_name" content="{$text['calc']}"/>
+	<meta property="og:site_name" content="{$text['test']}"/>
 	<meta property="og:type" content="website"/>
 
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
