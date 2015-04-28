@@ -19,13 +19,14 @@ $smarty->setCompileDir('../../../smarty/templates_c');
 //extract user values
 $user = get_user_values();
 //print_r($user);
-//echo calc_score($user);
 $score = calc_score($user);
+//echo $score; //die();
 
 //read averages
 $afile = 'averages.csv';
 $averages = csv_to_array($afile);
 $averages = $averages[0];
+//print_r($averages);die();
 
 $category = cat($score,$averages);
 
@@ -46,6 +47,7 @@ if (isset($_GET['order'])){
 
 //smarty
 $smarty->assign('result',$text['message_' . $category]);
+$smarty->assign('result_description',$text['description_' . $category]);
 $smarty->assign('fb_result',$text['fb_message_' . $category]);
 $smarty->assign('o2id',$o2id);
 $smarty->assign('url',$url);
@@ -81,7 +83,7 @@ if ((time()-filectime('averages.csv')) > 3600) {
 */
 function cat($score, $averages) {
     for ($p=20;$p<100;$p = $p + 20) {
-        if ($score < $averages['n-'.$p]) {
+        if ($score <= $averages['n-'.$p]) {
             return $p;   
         }
     }

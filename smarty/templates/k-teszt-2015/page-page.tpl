@@ -19,9 +19,11 @@
                         {$question['min_1']}
                       </div>
                       <div class="col-sm-6">
+                        0
                         {for $q=0 to 10}
-                          <input type="radio" name="q-{$question['id']}" id="q-{$question['id']}-{$q}" value="{$q}">&nbsp;{if $q%5==0}{$q}{/if}{if $q<10}&nbsp;&nbsp;{/if}</input>
+                          <input type="radio" name="q-{$question['id']}" id="q-{$question['id']}-{$q}" value="{$q}">&nbsp;{if $q<10}&nbsp;&nbsp;{/if}</input>
                         {/for}
+                        10
                       </div>
                       <div class="col-sm-3">
                         {$question['max_1']}
@@ -40,9 +42,11 @@
                         {$question['min_2']}
                       </div>
                       <div class="col-sm-6">
+                        0
                         {for $r=0 to 10}
-                          <input type="radio" name="r-{$question['id']}" id="r-{$question['id']}-{$r}" value="{$r}">&nbsp;{if $r%5==0}{$r}{/if}{if $r<10}&nbsp;&nbsp;{/if}</input>
+                          <input type="radio" name="r-{$question['id']}" id="r-{$question['id']}-{$r}" value="{$r}">&nbsp;{if $r<10}&nbsp;&nbsp;{/if}</input>
                         {/for}
+                        10
                       </div>
                       <div class="col-sm-3">
                         {$question['max_2']}

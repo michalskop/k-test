@@ -3,80 +3,76 @@
     <div class="carousel-caption center-block">
       <div class="o-question">
         <div class="i-question">
-            <p>Szeretnénk néhány demográfiai jellemzőt Önről megtudni, természetesen szem elõtt tartva az anonimitást. Kérjük, jelölje meg, hogy az alábbiak közül mi igaz Önre!
-            <p>Ha nem kívánja ezeket az adatokat megadni, kérjük kattintson az átugrás gombra, és ugorjon tovább a <button type="submit" class="btn btn-sm btn-success">{$text['page_results']}</button>
+            {$text['dg_top']}
         </div>
       </div>
       
       <div class="o-question">
         <div class="text-left form-inline">
-          <label>Az Ön neme:</label>
+          <label>{$text['dg_gender']}:</label>
           <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-info">
-              <input type="radio" name="input-sex" id="input-sex-woman" value="woman" />férfi</input>
+              <input type="radio" name="input-sex" id="input-sex-woman" value="female" />{$text['dg_gender_female']}</input>
             </label>
             <label class="btn btn-info">
-              <input type="radio" name="input-sex" id="input-sex-man" value="man"   />nő</input>
+              <input type="radio" name="input-sex" id="input-sex-man" value="male"   />{$text['dg_gender_male']}</input>
             </label>
           </div>
         </div> <!-- /form-inline -->
         
         <div class="text-left form-inline">
-          <label>Az Ön korcsoportja:</label>
+          <label>{$text['dg_age']}:</label>
           <div class="btn-group" data-toggle="buttons">
               <label class="btn btn-info">
-                <input type="radio" name="input-age" id="input-age-x-18" value="x-18"   />(18 év alatti)
+                <input type="radio" name="input-age" id="input-age-x-18" value="x-18"   />{$text['dg_age_18']}
               </label>
               <label class="btn btn-info">
-                <input type="radio" name="input-age" id="input-age-18-24" value="18-24"   />18-24
+                <input type="radio" name="input-age" id="input-age-18-24" value="18-24"   />{$text['dg_age_18-24']}
               </label>
               <label class="btn btn-info">
-                <input type="radio" name="input-age" id="input-age-25-29" value="25-29"   />25-29
+                <input type="radio" name="input-age" id="input-age-25-29" value="25-29"   />{$text['dg_age_25-29']}
               </label>
               <label class="btn btn-info">
-                <input type="radio" name="input-age" id="input-age-30-39" value="30-39"   />30-39
+                <input type="radio" name="input-age" id="input-age-30-39" value="30-39"   />{$text['dg_age_30-39']}
               </label>
               <label class="btn btn-info">
-                <input type="radio" name="input-age" id="input-age-40-49" value="40-49"   />40-49
+                <input type="radio" name="input-age" id="input-age-40-49" value="40-49"   />{$text['dg_age_40-49']}
               </label>
               <label class="btn btn-info">
-                <input type="radio" name="input-age" id="input-age-50-59" value="50-59"   />50-59
+                <input type="radio" name="input-age" id="input-age-50-59" value="50-59"   />{$text['dg_age_50-59']}
               </label>
               <label class="btn btn-info">
-                <input type="radio" name="input-age" id="input-age-60-69" value="60-69"   />60-69
+                <input type="radio" name="input-age" id="input-age-60-69" value="60-69"   />{$text['dg_age_60-69']}
               </label>
               <label class="btn btn-info">
-                <input type="radio" name="input-age" id="input-age-69-x" value="69-x"   />69 évnél idősebb
+                <input type="radio" name="input-age" id="input-age-69-x" value="69-x"   />{$text['dg_age_69']}
               </label>
           </div>
         </div><!-- /form-inline -->
         
         <div class="text-left form-inline">
-          <label>Az Ön lakóhelye:</label>
+          <label>{$text['dg_edu']}:</label>
           <div class="btn-group" data-toggle="buttons">
               <label class="btn btn-info">
-                <input type="radio" name="input-education" id="input-education-ed1" value="ed1" />Elvégzett/abbahagyott általános iskola
+                <input type="radio" name="input-education" id="input-education-ed1" value="ed1" />{$text['dg_edu_1']}
               </label>
               <label class="btn btn-info">
-                <input type="radio" name="input-education" id="input-education-ed2" value="ed2" />Általános iskola után elvégzett OKJ-s tanfolyam (ami még nem minősül szakiskolai végzettségnek)
+                <input type="radio" name="input-education" id="input-education-ed2" value="ed2" />{$text['dg_edu_2']}
               </label>
               <label class="btn btn-info">
-                <input type="radio" name="input-education" id="input-education-ed3" value="ed3" />Szakmunkásképző/szakiskola
+                <input type="radio" name="input-education" id="input-education-ed3" value="ed3" />{$text['dg_edu_3']}
               </label>
               <label class="btn btn-info">
-                <input type="radio" name="input-education" id="input-education-ed4" value="ed4" />Szakközépiskola (érettségivel)
+                <input type="radio" name="input-education" id="input-education-ed4" value="ed4" />{$text['dg_edu_4']}
               </label>
               <label class="btn btn-info">
-                <input type="radio" name="input-education" id="input-education-ed5" value="ed5" />Gimnázium (érettségivel)
+                <input type="radio" name="input-education" id="input-education-ed5" value="ed5" />{$text['dg_edu_5']}
               </label>
               <label class="btn btn-info">
-                <input type="radio" name="input-education" id="input-education-ed6" value="ed6" />Főiskola/ egyetemi alapképzés (BA)
+                <input type="radio" name="input-education" id="input-education-ed6" value="ed6" />{$text['dg_edu_6']}
               </label>
               <label class="btn btn-info">
-                <input type="radio" name="input-education" id="input-education-ed7" value="ed7" />Egyetem/ egyetemi mesterképzés (MA/MSc)
-              </label>
-              <label class="btn btn-info">
-                <input type="radio" name="input-education" id="input-education-ed8" value="ed8" />Egyetemi végzettségnél magasabb (pl. Phd)
+                <input type="radio" name="input-education" id="input-education-ed7" value="ed7" />{$text['dg_edu_7']}
               </label>
           </div>
         </div><!-- /form-inline -->  

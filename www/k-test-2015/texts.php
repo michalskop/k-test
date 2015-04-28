@@ -41,11 +41,17 @@ $text = array(
 
 
   //RESULTS (MATCH)
-  'message_20' => 'You are pretty not-corruption guy.',
-  'message_40' => 'You are rather a not-corruption guy.',
-  'message_60' => 'You are just average towards corruption.',
-  'message_80' => 'You are rather a corruption guy.',
-  'message_100' => 'You are pretty corruption guy.',
+  'message_20' => 'Very low propensity for corruption.',
+  'message_40' => 'Low propensity for corruption.',
+  'message_60' => 'Average propensity for corruption.',
+  'message_80' => 'High propensity for corruption.',
+  'message_100' => 'Very high propensity for corruption.',
+  
+  'description_20' => 'According to the results, you are much less characterized by the values that make you prone to corruption than the average. While cultivating your relationships with your friends, you typically also bear the interests of the broader community in mind. Keep it up!',
+  'description_40' => 'According to the results, you are less characterized by the values that make you prone to corruption than the average. While cultivating your relationships with your friends, you usually also bear the interests of the broader community in mind.',
+  'description_60' => 'According to the results, your susceptibility to corruption is on an average level. From now on, while cultivating your relationships with your friends, try to take a greater account of the consequences of your acts on the broader community.',
+  'description_80' => 'According to the results, you are much more characterized by the values that make you prone to corruption than the average. While cultivating your relationships with your friends, you typically do not bear the interests of the broader community in mind. This does not mean that you are corruptible; it only means that resisting corruption is a much greater challenge for you than for the others. Being aware of this can help you make more deliberate and appropriate decisions.',
+  'description_100' => 'According to the results, you are much more characterized by the values that make you prone to corruption than the average. While cultivating your relationships with your friends, you typically do not bear the interests of the broader community in mind. This does not mean that you are corruptible; it only means that resisting corruption is a much greater challenge for you than for the others. Being aware of this can help you make more deliberate and appropriate decisions.',
 
   'info' => 'Info',
   'test' => 'Corruption test',
@@ -86,7 +92,28 @@ $text = array(
    'your_value' => 'Your value',
    
    
-  
+    // DEMOGRAPHICS QUESTIONNAIRE
+    'dg_top' => '<p>We would like to ask you a few demographic questions, keeping your anonymity in mind, of course. <p>If you do not want to answer these questions, go directly to the <button type="submit" class="btn btn-sm btn-success">Results</button>.',
+    'dg_gender' => 'Gender',
+    'dg_gender_male' => 'Male',
+    'dg_gender_female' => 'Female',
+    'dg_age' => 'Age',
+    'dg_age_18' => '(under 18)',
+    'dg_age_18-24' => '18-24',
+    'dg_age_25-29' => '25-29',
+    'dg_age_30-39' => '30-39',
+    'dg_age_40-49' => '40-49',
+    'dg_age_50-59' => '50-59',
+    'dg_age_60-69' => '60-69',
+    'dg_age_69' => 'over 69',
+    'dg_edu' => 'Education',
+    'dg_edu_1' => 'Elementary school',
+    'dg_edu_2' => 'Post-secondary level training',
+    'dg_edu_3' => 'Technical/vocational training',
+    'dg_edu_4' => 'High school',
+    'dg_edu_5' => 'Bachelor’s degree',
+    'dg_edu_6' => 'Master’s degree',
+    'dg_edu_7' => 'Doctorate degree',
   
   
   

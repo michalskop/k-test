@@ -45,8 +45,8 @@ function calc_score($user) {
             $u = 5;
         else {
             $u = $user['q-'.$i];
-            $possible = $possible + 10;
         }
+        $possible = $possible + 10;
         if (in_array($i,$pro))
             $score += $u;
         if (in_array($i,$contra))
@@ -54,6 +54,7 @@ function calc_score($user) {
     }
     if ($possible == 0)
         return 0.5;
+    //echo $score . "::" . $possible . "::";
     return $score/$possible;
 }
 
