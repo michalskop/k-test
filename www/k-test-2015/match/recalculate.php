@@ -2,8 +2,11 @@
 /**
 * recalculates the results
 */
-$time1 = microtime(TRUE);
+
+//$time1 = microtime(TRUE);
 include_once("../common.php");
+//get language
+$lang = lang();
 
 //prepare variables
 global $letters, $v2c, $sum, $ns, $users;
@@ -20,7 +23,7 @@ foreach ($letters as $letter) {
 }
 
 //read results
-$rfile = 'result.csv';
+$rfile = 'result_'.$lang.'.csv';
 
 $v2c = [];
 $success = file_get_contents_chunked($rfile,1024,function($chunk,&$handle,$iteration){
@@ -84,7 +87,7 @@ for ($p=20;$p<100;$p = $p + 20) {
     $i++;
 }
 
-$fp = fopen('averages.csv', 'w');
+$fp = fopen('averages_'.$lang.'.csv', 'w');
 foreach ($lines as $line) {
     fputcsv($fp, $line);
 }

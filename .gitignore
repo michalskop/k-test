@@ -6,6 +6,10 @@ result.txt
 email.txt
 click.txt
 result.csv
+result_en.csv
+result_hu.csv
+averages_en.csv
+averages_hu.csv
 result0.csv
 *~lock*
 www/setup.php

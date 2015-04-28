@@ -5,8 +5,12 @@
 */
 session_start();
 
-include("texts.php");
+
 include("common.php");
+//get language
+$lang = lang();
+include("texts_".$lang.".php");
+
 
 // put full path to Smarty.class.php
 require('/usr/local/lib/php/Smarty/libs/Smarty.class.php');
@@ -24,6 +28,7 @@ foreach ($questions as $question)
     $order .= $question['id'] . ',';
 $order = rtrim($order,',');
 
+$smarty->assign('lang',$lang);
 $smarty->assign('text',$text);
 $smarty->assignByRef('questions', $questions);
 $smarty->assign('order',$order);

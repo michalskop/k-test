@@ -8,6 +8,16 @@ error_reporting(E_ALL);
 
 
 /**
+* get language
+*/
+function lang() {
+    if (isset($_GET['lang']) and ($_GET['lang'] == 'en'))
+        return 'en';
+    else //default language
+        return 'hu';
+}
+
+/**
 * check for malicious attempts to retrieve files
 * http://stackoverflow.com/questions/1587695/sanitize-get-parameters-to-avoid-xss-and-other-attacks
 */
@@ -25,6 +35,8 @@ function get_user_values() {
       //votes;
       if ((substr($key,0,2) == 'q-') or (substr($key,0,2) == 'r-') or (substr($key,0,2) == 's-'))
         $user[$key] = (int) $param;
+      if (substr($key,0,13) == 'demographics-')
+        $user[$key] = $param;
     }
   } else
       return $user;

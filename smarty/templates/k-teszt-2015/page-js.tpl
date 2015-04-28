@@ -1,13 +1,13 @@
 <!-- clicked -->
 <script>
     var session = '{$session_id}';
-    $("a, button, label, li").click(function() {
+    $("a, button, label, li, input").click(function() {
       save_action($(this).attr('id'));
     });
     function save_action(action) {
       $.ajax({
         url: "click.php",
-        data: { 'action':action }
+        data: { 'action':action, 'lang':'{$lang}' }
       });
     }
 </script>

@@ -6,8 +6,10 @@
 
 session_start();
 
-include("../texts.php");
 include("../common.php");
+//get language
+$lang = lang();
+include("../texts_".$lang.".php");
 
 // put full path to Smarty.class.php
 require('/usr/local/lib/php/Smarty/libs/Smarty.class.php');
@@ -23,7 +25,7 @@ $score = calc_score($user);
 //echo $score; //die();
 
 //read averages
-$afile = 'averages.csv';
+$afile = 'averages_'.$lang.'.csv';
 $averages = csv_to_array($afile);
 $averages = $averages[0];
 //print_r($averages);die();
@@ -44,6 +46,7 @@ if (isset($_GET['order'])){
 #print_r($questions);
 #print_r($o2id);die();
 
+$infotext = file_get_contents('../info_'.$lang.'.html');
 
 //smarty
 $smarty->assign('result',$text['message_' . $category]);
@@ -54,6 +57,7 @@ $smarty->assign('url',$url);
 $smarty->assign('averages',$averages);
 $smarty->assign('user',$user);
 $smarty->assign('text',$text);
+$smarty->assign('infotext',$infotext);
 $smarty->assignByRef('questions', $questions);
 $smarty->assign('session_id',session_id());
 $smarty->display('match.tpl');
@@ -69,12 +73,21 @@ foreach ($letters as $letter) {
             $line[] = '';
     }
 }
-$fp = fopen('result.csv', 'a');
+    //demographics
+$dgs = ['gender','age','education'];
+foreach ($dgs as $dg) {
+  if (isset($user['demographics-'.$dg]))
+    $line[] = $user['demographics-'.$dg];
+  else
+    $line[] = '';
+}
+
+$fp = fopen('result_'.$lang.'.csv', 'a');
 fputcsv($fp,$line);
 fclose($fp);
 
 //recalculate if old file
-if ((time()-filectime('averages.csv')) > 3600) {
+if ((time()-filectime('averages_'.$lang.'.csv')) > 3600) {
   include('recalculate.php');
 }
 

@@ -57,20 +57,19 @@ $text = array(
   'test' => 'Corruption test',
   'match_save' => 'Save the results',
    //save
-   'result_save_description' => 'K výsledkom svojho hlasovania sa môžete kedykoľvek vrátiť, ak si skopírujete a uložíte celú túto adresu:',
+   'result_save_description' => 'You can go back to your result anytime, just copy this whole address:',
 
    //fb
    'result_fb_appid' => "1668932179994317",
   'result_fb_picture_link' => 'http://voksmonitor.hu/european-parliament-2014/image/logo/',
-  'result_fb_name' => 'V inventúre hlasovaní mám najvyššiu zhodu:',
-  'result_fb_description_1' => 'Podľa Inventúry hlasovaní 2012-2015 ma v Národnej rade reprezentuje: ',
-  'result_fb_description_match' => 'zhoda',
-  'result_fb_description' => 'S kým sa najviac zhodujete na VolebnaKalkulacka.sk',
+  'result_fb_name' => 'According to K-Test:',
+  'result_fb_description_1' => 'K-Test',
+  'result_fb_description' => 'K-Test',
   'result_fb_redirect_link' => 'http:/localhost/',
   'result_fb_link' => 'http://localhost/',
-  'result_fb_action' => "[{'name':'Corruption','link':'http://localhost/'}]",
-   'result_winner_share' => 'Zdieľaj výsledky na Facebooku',
-   'result_share' => 'Zdieľaj výsledky',
+  'result_fb_action' => "[{'name':'Take K-Test','link':'http://localhost/'}]",
+   'result_winner_share' => 'Share results on Facebook',
+   'result_share' => 'Share results',
    
   'fb_message_20' => 'I am pretty not-corruption guy.',
   'fb_message_40' => 'I am rather a not-corruption guy.',
@@ -85,13 +84,12 @@ $text = array(
    //COMPARE
   'compare_title' => 'Detailed comparison',
    'result_close' => 'Close',
-   'result_question' => 'Otázka',
    'average' => 'Average',
-   'your_value' => 'Your value',
+   'your_value' => 'Your answer',
    
    
     // DEMOGRAPHICS QUESTIONNAIRE
-    'dg_top' => '<p>We would like to ask you a few demographic questions, keeping your anonymity in mind, of course. <p>If you do not want to answer these questions, go directly to the <button type="submit" class="btn btn-sm btn-success">Results</button>.',
+    'dg_top' => '<p>We would like to ask you a few demographic questions, keeping your anonymity in mind, of course. <p>If you do not want to answer these questions, go directly to the <button type="submit" class="btn btn-sm btn-success" id="top-result-button">Results</button>.',
     'dg_gender' => 'Gender',
     'dg_gender_male' => 'Male',
     'dg_gender_female' => 'Female',

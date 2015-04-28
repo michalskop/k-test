@@ -67,8 +67,8 @@
                       <div class="col-sm-8">
                         <div class="btn-group" data-toggle="buttons">
                           {for $s=0 to 10}
-                            <label class="btn btn-info">
-                              <input type="radio" name="s-{$question['id']}" id="s-{$question['id']}-{$s}" value="{$s}">{$s}</input>
+                            <label class="btn btn-info" id="label-s-{$question['id']}-{$s}">
+                              <input type="radio" name="s-{$question['id']}" id="s-{$question['id']}-{$s}" value="{$s}">{$s}
                             </label>
                           {/for}
                         </div>
