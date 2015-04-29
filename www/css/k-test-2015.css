@@ -127,7 +127,7 @@
       display: table;
       /*height: 150px;*/
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(0, 0, 0, 0.75);
       border-radius: 10px;
       margin: 5px 0;
       padding: 10px;
@@ -391,7 +391,7 @@ h4 {
 }
 
 .header {
-    background: url("http://voksmonitor.hu/2014-es-onkormanyzati-valasztas/image/bg.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0); 
+    background: url("/image/bg.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0); 
 }
 
 .lower {
@@ -400,4 +400,16 @@ h4 {
   margin: 5px 0;
   padding: 10px;
   color: #bbb;
+}
+
+.carousel-indicators li {
+  border: 3px solid orange;
+    width: 15px;
+    height: 15px;
+}
+.carousel-indicators .active {
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  background-color: orange;
 }
