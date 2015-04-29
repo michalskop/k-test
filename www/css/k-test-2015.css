@@ -135,9 +135,6 @@
     .carousel .item {
       height: 600px; /*default*/
     }
-    .header {
-      background: url("img/bg.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0); 
-    }
     .vote-button {
       min-width: 10em;
     }
@@ -395,11 +392,11 @@ h4 {
 }
 
 .lower {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   margin: 5px 0;
   padding: 10px;
-  color: #bbb;
+  color: #eee;
 }
 
 .carousel-indicators li {
