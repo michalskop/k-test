@@ -410,3 +410,31 @@ h4 {
   margin: 1px;
   background-color: orange;
 }
+
+#scrollable-dropdown-menu .tt-dropdown-menu {
+  max-height: 150px;
+  overflow-y: auto;
+}
+#scrollable-dropdown-menu .tt-menu {
+  max-height: 150px;
+  overflow-y: auto;
+}
+.tt-menu {
+  width: 200px;
+  margin: 12px 0;
+  padding: 8px 0;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  color: #333;
+  font-weight: 300;
+}
+.tt-highlight {
+    font-weight: bold;
+}

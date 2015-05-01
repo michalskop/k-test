@@ -26,10 +26,10 @@ $text = array(
   'google_tracking_id' => 'UA-8592359-12',  
  
   //title
-  'title' => 'Corruption test',
+  'title' => 'K-Test',
 
   //PAGE
-  'test_name' => 'Corruption test', 
+  'test_name' => 'K-Test', 
   'next' => 'NEXT',
   'page_results' => 'Results',
 
@@ -37,7 +37,7 @@ $text = array(
   'author_link' => 'http://k-monitor.hu',
   'licence' => 'Creative Commons BY 4.0',
   'year' => '2015',
-  'footer_text' => 'Some text.',
+  'footer_text' => '',
 
 
   //RESULTS (MATCH)
@@ -89,7 +89,7 @@ $text = array(
    
    
     // DEMOGRAPHICS QUESTIONNAIRE
-    'dg_top' => '<p>We would like to ask you a few demographic questions, keeping your anonymity in mind, of course. <p>If you do not want to answer these questions, go directly to the <button type="submit" class="btn btn-sm btn-success" id="top-result-button">Results</button>.',
+    'dg_top' => '<p>Szeretnénk néhány demográfiai jellemzõt megtudni rólad, természetesen szem elott tartva az anonimitást. Kérjük, válaszolj az alábbi kérdésekre! <p>Ha nem szeretnéd megadni ezeket az adatokat, kattints az <button type="submit" class="btn btn-sm btn-success" id="top-result-button">átugrás</button> gombra, és ugorj tovább az eredményekhez!',
     'dg_gender' => 'Gender',
     'dg_gender_male' => 'Male',
     'dg_gender_female' => 'Female',
@@ -110,7 +110,12 @@ $text = array(
     'dg_edu_5' => 'Bachelor’s degree',
     'dg_edu_6' => 'Master’s degree',
     'dg_edu_7' => 'Doctorate degree',
-  
+    'dg_municipality' => 'Municipality',
+
+
+    'info_text' => '<p>K-Test is a K-Monitor project that aims to highlight the broader social context of corruption. Our goal is to show: corruption does not begin with the acceptance of millions or billions worth of bribes but roots in our everyday social behaviour. Consequently, the fight against corruption has to be more complex than the investigation or prevention of particular crimes. It is important to recognize the social phenomena that may lead to an increase of corruption, but it is also important to see that corruption is not a distant, abstract phenomenon: it is present in our everyday choices and it is our personal responsibility to fight against it.
+<p>Based on their results, K-Test can give five kinds of feedback to the test-takers. The categories are: very low propensity for corruption, low propensity for corruption, average propensity for corruption, high propensity for corruption and very high propensity for corruption. As propensity for corruption has no unit of measurement, results can only be interpreted relatively to one another. The test defines the categories according to an average calculated of the results of the previous test-takers. You can find more information on the theoretical background of K-Test in the “About the test” section.
+<p>For their co-operation in the elaboration of the psychological background of the test, we owe our thanks to Mihály Berkics (Eötvös Loránd University, Institute of Psychology) and Gábor Orosz (Eötvös Loránd University, Institute of Psychology; MTA, Research Centre for Natural Sciences, Institute of Cognitive Neuroscience and Psychology)',
   
   
   

@@ -30,14 +30,14 @@ $text = array(
 
   //PAGE
   'test_name' => 'K-Teszt', 
-  'next' => 'NEXT',
-  'page_results' => 'Results',
+  'next' => 'KÖVETKEZÕ',
+  'page_results' => 'Eredmény',
 
   //footer
   'author_link' => 'http://k-monitor.hu',
   'licence' => 'Creative Commons BY 4.0',
   'year' => '2015',
-  'footer_text' => 'Some text.',
+  'footer_text' => '',
 
 
   //RESULTS (MATCH)
@@ -55,37 +55,37 @@ $text = array(
 
   'info' => 'Info',
   'test' => 'K-Teszt',
-  'match_save' => 'Save the results',
+  'match_save' => 'Eredmények mentése',
    //save
-   'result_save_description' => 'You can go back to your result anytime, just copy this whole address:',
+   'result_save_description' => 'Ha bármikor szeretnéd újra szemügyre venni saját eredményed, ezen a címen megteheted:',
 
    //fb
    'result_fb_appid' => "1668932179994317",
   'result_fb_picture_link' => 'http://voksmonitor.hu/european-parliament-2014/image/logo/',
-  'result_fb_name' => 'According to K-Test:',
+  'result_fb_name' => 'A K-Teszt szerint:',
   'result_fb_description_1' => '',
   'result_fb_description' => 'K-Test',
   'result_fb_redirect_link' => 'http:/localhost/',
   'result_fb_link' => 'http://localhost/',
-  'result_fb_action' => "[{'name':'Take K-Test','link':'http://localhost/'}]",
-   'result_winner_share' => 'Share results on Facebook',
-   'result_share' => 'Share results',
+  'result_fb_action' => "[{'name':'Töltsd ki te is a K-Tesztet!','link':'http://localhost/'}]",
+   'result_winner_share' => 'Oszd meg az eredményed Facebook-on!',
+   'result_share' => 'Eredményed megosztása',
    
-  'fb_message_20' => 'I am pretty not-corruption guy.',
-  'fb_message_40' => 'I am rather a not-corruption guy.',
-  'fb_message_60' => 'I am just average towards corruption.',
-  'fb_message_80' => 'I am rather a corruption guy.',
-  'fb_message_100' => 'I am pretty corruption guy.',
+  'fb_message_20' => 'Nagyon alacsony a korrupciós hajlandóságom.',
+  'fb_message_40' => 'Alacsony a korrupciós hajlandóságom.',
+  'fb_message_60' => 'Átlagos a korrupciós hajlandóságom.',
+  'fb_message_80' => 'Magas a korrupciós hajlandóságom.',
+  'fb_message_100' => 'Nagyon magas a korrupciós hajlandóságom.',
   
 
   'url' => 'http://volebnakalkulacka.sk',  
 
 
    //COMPARE
-  'compare_title' => 'Detailed comparison',
-   'result_close' => 'Close',
-   'average' => 'Average',
-   'your_value' => 'Your answer',
+  'compare_title' => 'Részletes összehasonlítás',
+   'result_close' => 'Bezár',
+   'average' => 'Átlag',
+   'your_value' => 'A te válaszod',
    
    
     // DEMOGRAPHICS QUESTIONNAIRE
@@ -111,8 +111,12 @@ $text = array(
     'dg_edu_6' => 'fősikola/egyetemi alapképzés',
     'dg_edu_7' => 'egyetemi mesterképzés',
     'dg_edu_8' => 'egyetemi végzettségnél magasab',
+    'dg_municipality' => 'Község',
   
-  
+    'info_text' => '<p>A K-Teszt a K-Monitor projektje, amely a korrupció szélesebb társadalmi összefüggéseire kíván rávilágítani. Célunk, hogy megmutassuk: a korrupció nem milliós vagy milliárdos csúszópénzek elfogadásával kezdődik, hanem hétköznapi szociális magatartásunkban gyökerezik. Ebből következően a korrupció elleni küzdelem is többről szól, mint a konkrét bűncselekmények felderítéséről vagy megelőzéséről. Fontos azoknak a társadalmi jelenségeknek a megismerése, amelyek a korrupció növekedéséhez vezethetnek, de az is fontos, hogy megértsük: a korrupció nem valami távoli, megfoghatatlan jelenség: mindennapi döntéseink során is jelen van, és egyéni felelősségünk, hogy tegyünk ellene.
+<p>A K-Teszt a kitöltőknek eredményeik alapján ötféle visszajelzést adhat. A kategóriák: nagyon alacsony korrupciós hajlandóság, alacsony korrupciós hajlandóság, átlagos korrupciós hajlandóság, magas korrupciós hajlandóság, valamint nagyon magas korrupciós hajlandóság. Mivel a korrupciós hajlandóságnak nincs mértékegysége, az eredmények csak egymáshoz képest értelmezhetők. A teszt a kategóriákat a korábbi kitöltők eredményeiből számolt átlaghoz képest határozza meg. A K-Teszt elméleti megalapozottságáról további információkat a Magyarázat részben találhatsz.
+<p>A K-Teszt pszichológiai megalapozásában való közreműködésükért köszönet:
+<p>Berkics Mihálynak (Eötvös Loránd Tudományegyetem, Pszichológiai Intézet) és Orosz Gábornak (Eötvös Loránd Tudományegyetem, Pszichológiai Intézet; MTA, TTK, Kognitív Idegtudományi és Pszichológiai Intézet)',
   
   
   

@@ -77,6 +77,14 @@
           </div>
         </div><!-- /form-inline -->  
         
+        <div class="input-group">
+            <label id="label-municipality">{$text['dg_municipality']}: 
+                <div id="scrollable-dropdown-menu" style="display:inline-block;  margin-top: 10px;">
+                    <input type="text" placeholder="..." class="form-control input non-opaque typeahead" id="search-input" name="demographics-municipality">
+                </div>
+            </label>
+        </div>
+        
       </div> <!-- /o-question -->
 
       <button type="submit" class="btn btn-lg btn-success">{$text['page_results']} ></button>

@@ -1,24 +1,25 @@
 {extends file='main.tpl'}
     {block name=additionalHead}
-      <script type='text/javascript' src="//twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
-      <script src="filter.js"></script>
-      <link href="../css/stylish-portfolio.min.css" rel="stylesheet">
-      <link href="../css/carousel.min.css" rel="stylesheet">
       <link href="../css/k-test-2015.css" rel="stylesheet">
+      <style>
+        .header {
+          background-image: none;
+        }
+      </style>
     {/block}
     
     {block name=lastHead}
-      <title>{$text['title']}</title>
+      <title>{$text['info']}</title>
     {/block}
 
     {block name=body}
       <!-- header -->
       {include "page-header.tpl"}
       <!-- /header -->
-      
-      <!-- carousel -->
-      {include "page-carousel.tpl"}
-      <!-- /carousel -->
+      <div class="container">
+      <h1>{$text['info']}</h1>
+      {$text['info_text']}
+      </div>
    {/block}
    
    

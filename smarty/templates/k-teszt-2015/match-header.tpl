@@ -10,7 +10,7 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <p class="navbar-text"><a href="#" data-toggle="modal" data-target="#modal-save-results" id="header-save"><i class="fa fa-download"></i> {$text['match_save']}</a></p>
-      <p class="navbar-text navbar-right"><a href="/info" id="header-info"><i class="fa fa-info-circle"></i> {$text['info']}</a></p>
+      <p class="navbar-text navbar-right"><a href="../info.php?lang={$text['lang']}" id="header-info"><i class="fa fa-info-circle"></i> {$text['info']} </a> 
     </div>
   </div>
 </nav>

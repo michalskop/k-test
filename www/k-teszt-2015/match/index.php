@@ -74,7 +74,7 @@ foreach ($letters as $letter) {
     }
 }
     //demographics
-$dgs = ['gender','age','education'];
+$dgs = ['gender','age','education','municipality'];
 foreach ($dgs as $dg) {
   if (isset($user['demographics-'.$dg]))
     $line[] = $user['demographics-'.$dg];
