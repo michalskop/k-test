@@ -66,7 +66,7 @@ $smarty->display('match.tpl');
 $letters = ['q','r','s'];
 $line = [session_id(),$text['test_code'],date("Y-m-d H:i:s"),$_SERVER['REMOTE_ADDR']];
 foreach ($letters as $letter) {
-    for ($i=1;$i<=20;$i++) {
+    for ($i=1;$i<=15;$i++) {
         if (isset($user[$letter . '-' . $i]))
             $line[] = $user[$letter . '-' . $i];
         else
