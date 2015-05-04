@@ -35,7 +35,7 @@ $success = file_get_contents_chunked($rfile,1024,function($chunk,&$handle,$itera
     } else {
         $user = [];
         $ar = str_getcsv($chunk);
-        if (count($ar) >= 60) {
+        if (count($ar) >= 45) { //3*15
             foreach ($letters as $letter) {
                 for ($i=1;$i<=15;$i++) {
                 
@@ -60,6 +60,7 @@ $success = file_get_contents_chunked($rfile,1024,function($chunk,&$handle,$itera
 });
 foreach ($letters as $letter) {
     for ($i=1;$i<=15;$i++) {
+        //echo $letter . '-' . $i;
         $averages[$letter . '-' . $i] = $sums[$letter . '-' . $i] / $ns[$letter . '-' . $i];
     }
 }

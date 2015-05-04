@@ -28,7 +28,7 @@ $score = calc_score($user);
 $afile = 'averages_'.$lang.'.csv';
 $averages = csv_to_array($afile);
 $averages = $averages[0];
-//print_r($averages);die();
+//print_r($averages);//die();
 
 $category = cat($score,$averages);
 
@@ -87,6 +87,7 @@ fputcsv($fp,$line);
 fclose($fp);
 
 //recalculate if old file
+//echo time() . "::" . filectime('averages_'.$lang.'.csv');
 if ((time()-filectime('averages_'.$lang.'.csv')) > 3600) {
   include('recalculate.php');
 }
