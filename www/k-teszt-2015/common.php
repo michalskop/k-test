@@ -48,11 +48,11 @@ function get_user_values() {
 * calculate overall score
 */
 function calc_score($user) {
-    $pro = [1, 3, 5, 6, 10, 12, 13, 15];
-    $contra = [4, 7, 9, 11, 16, 18, 19];
+    $pro = [1, 2, 4, 5, 8, 10, 11, 12];
+    $contra = [3, 6, 7, 9, 13, 14, 15];
     $score = 0;
     $possible = 0;
-    for ($i=1; $i<=20; $i++) {
+    for ($i=1; $i<=15; $i++) {
         if (!isset($user['q-'.$i]))
             $u = 5;
         else {

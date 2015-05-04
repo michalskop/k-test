@@ -90,7 +90,7 @@ $text = array(
    
     // DEMOGRAPHICS QUESTIONNAIRE
     'dg_top' => '<p>Szeretnénk néhány demográfiai jellemzőt megtudni rólad, természetesen szem elõtt tartva az anonimitást. Kérjük, válaszolj az alábbi kérdésekre! <p>Ha nem szeretnéd megadni ezeket az adatokat, kattints az <button type="submit" class="btn btn-sm btn-success" id="top-result-button">átugrás</button> gombra, és ugorj tovább az eredményekhez!',
-    'dg_gender' => 'Gender',
+    'dg_gender' => 'Nemed',
     'dg_gender_male' => 'férfi',
     'dg_gender_female' => 'nő',
     'dg_age' => 'Korod',
@@ -111,7 +111,7 @@ $text = array(
     'dg_edu_6' => 'fősikola/egyetemi alapképzés',
     'dg_edu_7' => 'egyetemi mesterképzés',
     'dg_edu_8' => 'egyetemi végzettségnél magasab',
-    'dg_municipality' => 'Község',
+    'dg_municipality' => 'Lakhelyed',
   
     'info_text' => '<p>A K-Teszt a K-Monitor projektje, amely a korrupció szélesebb társadalmi összefüggéseire kíván rávilágítani. Célunk, hogy megmutassuk: a korrupció nem milliós vagy milliárdos csúszópénzek elfogadásával kezdődik, hanem hétköznapi szociális magatartásunkban gyökerezik. Ebből következően a korrupció elleni küzdelem is többről szól, mint a konkrét bűncselekmények felderítéséről vagy megelőzéséről. Fontos azoknak a társadalmi jelenségeknek a megismerése, amelyek a korrupció növekedéséhez vezethetnek, de az is fontos, hogy megértsük: a korrupció nem valami távoli, megfoghatatlan jelenség: mindennapi döntéseink során is jelen van, és egyéni felelősségünk, hogy tegyünk ellene.
 <p>A K-Teszt a kitöltőknek eredményeik alapján ötféle visszajelzést adhat. A kategóriák: nagyon alacsony korrupciós hajlandóság, alacsony korrupciós hajlandóság, átlagos korrupciós hajlandóság, magas korrupciós hajlandóság, valamint nagyon magas korrupciós hajlandóság. Mivel a korrupciós hajlandóságnak nincs mértékegysége, az eredmények csak egymáshoz képest értelmezhetők. A teszt a kategóriákat a korábbi kitöltők eredményeiből számolt átlaghoz képest határozza meg. A K-Teszt elméleti megalapozottságáról további információkat a Magyarázat részben találhatsz.

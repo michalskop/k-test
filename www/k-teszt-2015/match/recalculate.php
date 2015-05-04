@@ -16,7 +16,7 @@ $averages = [];
 $users = [];
 $letters = ['q','r','s'];
 foreach ($letters as $letter) {
-    for ($i=1;$i<=20;$i++) {
+    for ($i=1;$i<=15;$i++) {
         $sums[$letter . '-' . $i] = 0;
         $ns[$letter . '-' . $i] = 0;
     }
@@ -37,7 +37,7 @@ $success = file_get_contents_chunked($rfile,1024,function($chunk,&$handle,$itera
         $ar = str_getcsv($chunk);
         if (count($ar) >= 60) {
             foreach ($letters as $letter) {
-                for ($i=1;$i<=20;$i++) {
+                for ($i=1;$i<=15;$i++) {
                 
                     $g = $ar[$v2c[$letter . '-' . $i]];
                     //print_r($g);die();
@@ -59,7 +59,7 @@ $success = file_get_contents_chunked($rfile,1024,function($chunk,&$handle,$itera
     }
 });
 foreach ($letters as $letter) {
-    for ($i=1;$i<=20;$i++) {
+    for ($i=1;$i<=15;$i++) {
         $averages[$letter . '-' . $i] = $sums[$letter . '-' . $i] / $ns[$letter . '-' . $i];
     }
 }
@@ -75,7 +75,7 @@ for ($p=0.2;$p<1;$p = $p + 0.2) {
 //prepare rows for writing
 $lines = [[],[]];
 foreach ($letters as $letter) {
-    for ($i=1;$i<=20;$i++) {
+    for ($i=1;$i<=15;$i++) {
         $lines[0][] = $letter . '-' . $i;
         $lines[1][] = $averages[$letter . '-' . $i];
     }
