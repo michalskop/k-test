@@ -388,7 +388,7 @@ h4 {
 }
 
 .header {
-    background: url("/image/bg.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0); 
+    background: url("../image/bg.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0); 
 }
 
 .lower {
