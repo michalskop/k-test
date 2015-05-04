@@ -31,6 +31,7 @@ $averages = $averages[0];
 //print_r($averages);//die();
 
 $category = cat($score,$averages);
+$stars = 6-$category/20;
 
 //this page
 $url = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ;
@@ -52,6 +53,7 @@ $infotext = file_get_contents('../info_'.$lang.'.html');
 $smarty->assign('result',$text['message_' . $category]);
 $smarty->assign('result_description',$text['description_' . $category]);
 $smarty->assign('fb_result',$text['fb_message_' . $category]);
+$smarty->assign('stars',$stars);
 $smarty->assign('o2id',$o2id);
 $smarty->assign('url',$url);
 $smarty->assign('averages',$averages);
