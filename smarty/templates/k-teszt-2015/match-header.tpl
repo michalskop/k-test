@@ -9,7 +9,10 @@
       </button>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <p class="navbar-text"><a href="#" data-toggle="modal" data-target="#modal-save-results" id="header-save"><i class="fa fa-download"></i> {$text['match_save']}</a></p>
+      <div class="navbar-text"><a href="#" data-toggle="modal" data-target="#modal-save-results" id="header-save"><i class="fa fa-download"></i> {$text['match_save']}</a>
+      </div>
+      <a href="{$text['1perc_link']}" class="btn btn-success navbar-btn" type="button" id="header-1perc"><i class="fa fa-hand-o-right"></i> {$text['1perc']}</a> 
+      
       <p class="navbar-text navbar-right"><a href="../info.php?lang={$text['lang']}" id="header-info"><i class="fa fa-info-circle"></i> {$text['info']} </a> 
     </div>
   </div>

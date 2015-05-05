@@ -117,7 +117,9 @@ $text = array(
 <p>A K-Teszt a kitöltőknek eredményeik alapján ötféle visszajelzést adhat. A kategóriák: nagyon alacsony korrupciós hajlandóság, alacsony korrupciós hajlandóság, átlagos korrupciós hajlandóság, magas korrupciós hajlandóság, valamint nagyon magas korrupciós hajlandóság. Mivel a korrupciós hajlandóságnak nincs mértékegysége, az eredmények csak egymáshoz képest értelmezhetők. A teszt a kategóriákat a korábbi kitöltők eredményeiből számolt átlaghoz képest határozza meg. A K-Teszt elméleti megalapozottságáról további információkat a Magyarázat részben találhatsz.
 <p>A K-Teszt pszichológiai megalapozásában való közreműködésükért köszönet:
 <p>Berkics Mihálynak (Eötvös Loránd Tudományegyetem, Pszichológiai Intézet) és Orosz Gábornak (Eötvös Loránd Tudományegyetem, Pszichológiai Intézet; MTA, TTK, Kognitív Idegtudományi és Pszichológiai Intézet)',
-  
+ 
+    '1perc' => 'Támogasd a korrupció elleni küzdelmet adód 1%-ával!',
+    '1perc_link' => 'http://k-monitor.hu/hirek/magyar-hirek/tamogasd-a-k-monitort-adod-1-aval', 
   
   
 );
