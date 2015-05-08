@@ -1,20 +1,20 @@
 <?php
+error_reporting(0);
+ ini_set("display_errors", 1);
+
 /**
 * VAA
 * calculate match
 */
-
 session_start();
 
 include("../common.php");
 //get language
 $lang = lang();
 include("../texts_".$lang.".php");
-
 // put full path to Smarty.class.php
-require('/usr/local/lib/php/Smarty/libs/Smarty.class.php');
+require('/usr/local/lib/php/Smarty/Smarty.class.php');
 $smarty = new Smarty();
-
 $smarty->setTemplateDir('../../../smarty/templates/' . $text['template_code']);
 $smarty->setCompileDir('../../../smarty/templates_c');
 
@@ -23,19 +23,16 @@ $user = get_user_values();
 //print_r($user);
 $score = calc_score($user);
 //echo $score; //die();
-
 //read averages
 $afile = 'averages_'.$lang.'.csv';
 $averages = csv_to_array($afile);
 $averages = $averages[0];
 //print_r($averages);//die();
-
 $category = cat($score,$averages);
 $stars = 6-$category/20;
 
 //this page
 $url = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ;
-
 //read situations
 $qfile = '../sources/'.$text['source_code'].'.csv';
 $questions = csv_to_array($qfile);
@@ -46,7 +43,6 @@ if (isset($_GET['order'])){
 }
 #print_r($questions);
 #print_r($o2id);die();
-
 $infotext = file_get_contents('../info_'.$lang.'.html');
 
 //smarty
@@ -65,8 +61,8 @@ $smarty->assign('session_id',session_id());
 $smarty->display('match.tpl');
 
 //save results
-$letters = ['q','r','s'];
-$line = [session_id(),$text['test_code'],date("Y-m-d H:i:s"),$_SERVER['REMOTE_ADDR']];
+$letters = Array('q','r','s');
+$line = Array(session_id(),$text['test_code'],date("Y-m-d H:i:s"),$_SERVER['REMOTE_ADDR']);
 foreach ($letters as $letter) {
     for ($i=1;$i<=15;$i++) {
         if (isset($user[$letter . '-' . $i]))
@@ -76,7 +72,7 @@ foreach ($letters as $letter) {
     }
 }
     //demographics
-$dgs = ['gender','age','education','municipality'];
+$dgs = Array('gender','age','education','municipality');
 foreach ($dgs as $dg) {
   if (isset($user['demographics-'.$dg]))
     $line[] = $user['demographics-'.$dg];

@@ -10,11 +10,11 @@ $lang = lang();
 
 //prepare variables
 global $letters, $v2c, $sum, $ns, $users;
-$sums = [];
-$ns = [];
-$averages = [];
-$users = [];
-$letters = ['q','r','s'];
+$sums = Array();
+$ns = Array();
+$averages = Array();
+$users = Array();
+$letters = Array('q','r','s');
 foreach ($letters as $letter) {
     for ($i=1;$i<=15;$i++) {
         $sums[$letter . '-' . $i] = 0;
@@ -25,7 +25,7 @@ foreach ($letters as $letter) {
 //read results
 $rfile = 'result_'.$lang.'.csv';
 
-$v2c = [];
+$v2c = Array();
 $success = file_get_contents_chunked($rfile,1024,function($chunk,&$handle,$iteration){
     global $letters,$v2c, $sums, $ns, $users;
     if ($iteration == 0) {
@@ -33,7 +33,7 @@ $success = file_get_contents_chunked($rfile,1024,function($chunk,&$handle,$itera
         foreach ($c2v as $k => $v)
             $v2c[$v] = $k;
     } else {
-        $user = [];
+        $user = Array();
         $ar = str_getcsv($chunk);
         if (count($ar) >= 45) { //3*15
             foreach ($letters as $letter) {
@@ -68,13 +68,13 @@ foreach ($letters as $letter) {
 sort($users);
 $c = count($users);
 //get percentiles
-$percs = [];
+$percs = Array();
 for ($p=0.2;$p<1;$p = $p + 0.2) {
    $percs[] = $users[round($p * $c - 1.0-$p)];
 }
 
 //prepare rows for writing
-$lines = [[],[]];
+$lines = Array(Array(),Array());
 foreach ($letters as $letter) {
     for ($i=1;$i<=15;$i++) {
         $lines[0][] = $letter . '-' . $i;

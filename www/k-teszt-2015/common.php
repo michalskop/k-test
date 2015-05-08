@@ -29,7 +29,7 @@ function sanitize($input) {
 * extracts user's answers
 */
 function get_user_values() {
-  $user = [];
+  $user = Array();
   if (count($_GET) > 0) {
     foreach ($_GET as $key => $param) {
       //votes;
@@ -48,8 +48,8 @@ function get_user_values() {
 * calculate overall score
 */
 function calc_score($user) {
-    $pro = [1, 2, 4, 5, 8, 10, 11, 12];
-    $contra = [3, 6, 7, 9, 13, 14, 15];
+    $pro = Array(1, 2, 4, 5, 8, 10, 11, 12);
+    $contra = Array(3, 6, 7, 9, 13, 14, 15);
     $score = 0;
     $possible = 0;
     for ($i=1; $i<=15; $i++) {

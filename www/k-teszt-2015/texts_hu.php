@@ -15,7 +15,7 @@ $text = array(
   //fb
   'og:image' => 'http://volebnakalkulacka.sk/image/logo.jpg',
   'og:title' => 'K-Teszt',
-  'og:url' => 'http://volebnakalkulacka.sk',
+  'og:url' => 'k-teszt.hu',
   'og:site_name' => 'K-Teszt',
   
   //old browsers
@@ -23,7 +23,7 @@ $text = array(
   'opera11' => 'No support for Opera 11 and older, sorry.',
   
   //google analytics tracking id
-  'google_tracking_id' => 'UA-8592359-12',  
+  'google_tracking_id' => 'UA-62774054-1',  
  
   //title
   'title' => 'K-Teszt',
@@ -60,14 +60,14 @@ $text = array(
    'result_save_description' => 'Ha bármikor szeretnéd újra szemügyre venni saját eredményed, ezen a címen megteheted:',
 
    //fb
-   'result_fb_appid' => "1668932179994317",
+   'result_fb_appid' => "862007567205589",
   'result_fb_picture_link' => 'http://voksmonitor.hu/european-parliament-2014/image/logo/',
   'result_fb_name' => 'A K-Teszt szerint:',
   'result_fb_description_1' => '',
   'result_fb_description' => 'K-Test',
-  'result_fb_redirect_link' => 'http:/localhost/',
-  'result_fb_link' => 'http://localhost/',
-  'result_fb_action' => "[{'name':'Töltsd ki te is a K-Tesztet!','link':'http://localhost/'}]",
+  'result_fb_redirect_link' => 'http://k-teszt.hu/',
+  'result_fb_link' => 'http://k-teszt.hu/',
+  'result_fb_action' => "[{'name':'Töltsd ki te is a K-Tesztet!','link':'http://k-teszt.hu/'}]",
    'result_winner_share' => 'Oszd meg az eredményed Facebook-on!',
    'result_share' => 'Eredményed megosztása',
    
@@ -78,7 +78,7 @@ $text = array(
   'fb_message_100' => 'Nagyon magas a korrupciós hajlandóságom.',
   
 
-  'url' => 'http://volebnakalkulacka.sk',  
+  'url' => 'http://k-teszt.hu',  
 
 
    //COMPARE

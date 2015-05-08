@@ -3,7 +3,7 @@
 //https://github.com/twitter/typeahead.js/issues/271#issuecomment-37123748
 //http://stackoverflow.com/a/22772703/1666623
 $(function(){
-  $.get( "filter.json", function(data) {
+  $.getJSON( "filter.json", function(data) {
     names = data;
   })
   .done(function() {
