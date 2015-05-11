@@ -8,7 +8,7 @@
       </div>
       
       <div class="o-question">
-        <div class="text-left form-inline">
+        <div class="text-left form-inline question-demo-1">
           <label>{$text['dg_gender']}:</label>
           <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-info" id="label-demographics-gender-female">
@@ -20,7 +20,7 @@
           </div>
         </div> <!-- /form-inline -->
         
-        <div class="text-left form-inline">
+        <div class="text-left form-inline question-demo-2">
           <label>{$text['dg_age']}:</label>
           <div class="btn-group" data-toggle="buttons">
               <label class="btn btn-info" id="label-demographics-age-x-18">
@@ -50,7 +50,7 @@
           </div>
         </div><!-- /form-inline -->
         
-        <div class="text-left form-inline">
+        <div class="text-left form-inline question-demo-3">
           <label>{$text['dg_edu']}:</label>
           <div class="btn-group" data-toggle="buttons">
               <label class="btn btn-info" id="label-demographics-education-ed1">
@@ -77,7 +77,7 @@
           </div>
         </div><!-- /form-inline -->  
         
-        <div class="input-group">
+        <div class="input-group question-demo-4">
             <label id="label-municipality">{$text['dg_municipality']}: 
                 <div id="scrollable-dropdown-menu" style="display:inline-block;  margin-top: 10px;">
                     <input type="text" placeholder="..." class="form-control input non-opaque typeahead" id="search-input" name="demographics-municipality">

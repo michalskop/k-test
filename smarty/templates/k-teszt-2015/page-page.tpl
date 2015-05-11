@@ -2,7 +2,7 @@
               <div class="container">
                 <div class="carousel-caption center-block">
                   <!-- statement -->
-                  <div class="o-question">
+                  <div class="o-question question-statement">
                     <div class="i-question">
                         <h2 class="question-question">{$question['situation']}</h2>
                     </div> <!-- /.i-question -->
@@ -10,7 +10,7 @@
                   <!-- /statement -->
                   
                   <!-- question 1 -->
-                  <div class="o-question">
+                  <div class="o-question question-q">
                     <div class="btn-toolbar" role="toolbar">
                       <h4 class="text-left">{$question['question_1']}</h4>
                     </div>
@@ -33,7 +33,7 @@
                   <!-- /question 1 -->
                   
                   <!-- question 2 -->
-                  <div class="o-question">
+                  <div class="o-question question-r">
                     <div class="btn-toolbar" role="toolbar">
                       <h4 class="text-left">{$question['question_2']}</h4>
                     </div>
@@ -57,7 +57,7 @@
                   
                   
                   <!-- question 3 -->
-                  <div class="o-question">
+                  <div class="o-question question-s">
                     <div class="btn-toolbar" role="toolbar">
                       <h4 class="text-left">{$question['question_3']}</h4>
                     </div>
