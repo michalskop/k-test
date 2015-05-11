@@ -3,7 +3,7 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
                     
-                    <a href="{$text['author_link']}" title="{$text['author']}" id="footer-kohovolit-logo"><img src="/image/logo.png" alt="logo" /></a>
+                    <a href="{$text['author_link']}" title="{$text['author']}" id="footer-kohovolit-logo"><img src="http://voksmonitor.hu/2014-es-europai-parlamenti-valasztas/image/kmonitor.png" alt="logo" /></a>
                     
 					<p class="lead black">{$text['footer_text']}</p>
 					

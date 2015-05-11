@@ -150,6 +150,10 @@
    #header-1perc {
     display: inline-block;
    }
+   
+   .question-demo-2, .question-demo-3 {
+     display:block;
+   }
   }
   
   @media (min-width: 868px) {
