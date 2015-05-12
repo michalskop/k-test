@@ -61,7 +61,7 @@ $text = array(
 
    //fb
    'result_fb_appid' => "862007567205589",
-  'result_fb_picture_link' => 'http://voksmonitor.hu/european-parliament-2014/image/logo/',
+  'result_fb_picture_link' => 'http://k-monitor.hu/skin_1/images/head/logo.jpg',
   'result_fb_name' => 'According to K-Test:',
   'result_fb_description_1' => 'K-Test',
   'result_fb_description' => 'K-Test',

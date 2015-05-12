@@ -6,4 +6,4 @@ http://www.facebook.com/dialog/feed?
     caption=&
     actions={$text.result_fb_action|escape:'url'}&
     description={$fb_result}&
-    redirect_uri={$text.result_fb_redirect_link|escape:'url'}
+    redirect_uri={$text.result_fb_redirect_link|escape:'url'}  

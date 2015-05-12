@@ -15,17 +15,22 @@
                       <h4 class="text-left">{$question['question_1']}</h4>
                     </div>
                     <div class="row">
-                      <div class="col-sm-3">
+                      <div class="col-sm-2">
                         {$question['min_1']}
                       </div>
-                      <div class="col-sm-6">
-                        0
+                      <div class="col-sm-8">
+                        <!--0-->
+                        <div class="btn-group" data-toggle="buttons">
                         {for $q=0 to 10}
-                          <input type="radio" name="q-{$question['id']}" id="q-{$question['id']}-{$q}" value="{$q}">&nbsp;{if $q<10}&nbsp;&nbsp;{/if}</input>
+                          <label class="btn btn-info" id="label-q-{$question['id']}-{$q}">
+                            <input type="radio" name="q-{$question['id']}" id="q-{$question['id']}-{$q}" value="{$q}">{$q}
+                          </label>
+                          <!--<input type="radio" name="q-{$question['id']}" id="q-{$question['id']}-{$q}" value="{$q}">&nbsp;{if $q<10}&nbsp;&nbsp;{/if}</input>-->
                         {/for}
-                        10
+                        </div>
+                        <!--10-->
                       </div>
-                      <div class="col-sm-3">
+                      <div class="col-sm-2">
                         {$question['max_1']}
                       </div>
                     </div> <!-- /row -->
@@ -38,17 +43,22 @@
                       <h4 class="text-left">{$question['question_2']}</h4>
                     </div>
                     <div class="row">
-                      <div class="col-sm-3">
+                      <div class="col-sm-2">
                         {$question['min_2']}
                       </div>
-                      <div class="col-sm-6">
-                        0
+                      <div class="col-sm-8">
+                        <!--0-->
+                        <div class="btn-group" data-toggle="buttons">
                         {for $r=0 to 10}
-                          <input type="radio" name="r-{$question['id']}" id="r-{$question['id']}-{$r}" value="{$r}">&nbsp;{if $r<10}&nbsp;&nbsp;{/if}</input>
+                          <label class="btn btn-info" id="label-r-{$question['id']}-{$r}">
+                            <input type="radio" name="r-{$question['id']}" id="r-{$question['id']}-{$r}" value="{$r}">{$r}
+                          </label>
+                          <!--<input type="radio" name="r-{$question['id']}" id="r-{$question['id']}-{$r}" value="{$r}">&nbsp;{if $r<10}&nbsp;&nbsp;{/if}</input>-->
                         {/for}
-                        10
+                        </div>
+                        <!--10-->
                       </div>
-                      <div class="col-sm-3">
+                      <div class="col-sm-2">
                         {$question['max_2']}
                       </div>
                     </div> <!-- /row -->
